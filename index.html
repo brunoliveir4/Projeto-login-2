@@ -9,32 +9,35 @@
 </head>
 <body>
     <main>
-        <section>
+        <section class="espaco">
             <h1>LOGIN</h1>
 
-            <form action="" method="post" autocomplete="on">
+            <form action="" method="post" autocomplete="off">
                 <p>
-                    <label for="imail">Email</label>
-                    <input type="email" name="mail" id="imail">
-                    <span class="material-symbols-outlined">email</span>
+                    <label id="labelemail" for="imail">Email</label>
+                    <input id="input1" class="inputs" type="email" name="mail" id="imail">
+                    <span id="icon1" class="material-symbols-outlined">email</span>
                 </p>
+                <hr>
                 <p>
-                    <label for="isen">Password</label>
-                    <input type="password" name="sen" id="isen">
-                    <span class="material-symbols-outlined">vpn_key</span>
+                    <label for="isen">Senha</label>
+                    <input id="input2" class="inputs" type="password" name="sen" id="isen" minlength="8" maxlength="30">
+                    <span id="icon2" class="material-symbols-outlined">vpn_key</span>
                 </p>
-                <p>
-                    <input type="checkbox" name="info" id="iinfo">
-                    <label for="iinfo">Remember Me Forget Password</label>
-                </p>
-                <p>
-                    <input type="submit" value="Log in">
-                </p>
-                <p>
-                    Não tem uma conta?
-                    <a href="criar-conta.html"> Crie uma agora </a>
+                <hr>
+                <p id="checkbox">
+                    <label id="checkbox1" for="iinfo">Remember Me Forget Password</label>
+                    <input id="checkbox2" type="checkbox" name="info" id="iinfo">
                 </p>
             </form>
+
+            <p id="login">
+                <input id="ilogin" type="submit" value="LOG IN">
+            </p>
+            <p id="link1">
+                Não tem uma conta?
+                <a id="link2" href="criar-conta.html"> Crie uma agora </a>
+            </p>
         </section>
     </main>
 </body>
